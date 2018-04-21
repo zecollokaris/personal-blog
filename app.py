@@ -13,6 +13,12 @@ def index():
 def about():
     return render_template('about.html')
 
+#Route for post
+@app.route('/post')
+def post():
+    return render_template('post.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
