@@ -18,7 +18,10 @@ def about():
 def post():
     return render_template('post.html')
 
-
+#Route for contact
+@app.route('/contact')
+def add():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
