@@ -1,11 +1,11 @@
 #Importing flask and render_template
 from flask import Flask, render_template
-
+'''
 #Importing Flask-SQLAlchemy for database setup.
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy'''
 
 app = Flask(__name__)
-
+'''
 #Setting Database location
 app.config['SQALCHEMY_DATABASE_URI'] = 'sqlite:////Home/Desktop/personal-blog-project/blog.db'
 db = SQAlchemy(app)
@@ -17,7 +17,7 @@ class Blogpost(db.Model):
     subtitle = db.Column(db.String(50))
     author = db.Column(db.String(20))
     date_posted = db.Column(db.DateTime)
-    content = db.Column(db.Text)
+    content = db.Column(db.Text)'''
 
 
 #Route for index
@@ -44,7 +44,6 @@ def contact():
 @app.route('/add')
 def add():
     return render_template('add.html')
-
 
 
 if __name__ == '__main__':
