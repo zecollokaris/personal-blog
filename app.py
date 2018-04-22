@@ -20,7 +20,7 @@ def post():
 
 #Route for contact
 @app.route('/contact')
-def add():
+def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
