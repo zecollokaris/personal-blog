@@ -1,7 +1,15 @@
 #Importing flask and render_template
 from flask import Flask, render_template
 
+#Importing Flask-SQLAlchemy for database setup.
+from flask_sqlalchemy import SQAlchemy
+
 app = Flask(__name__)
+
+#Setting Database location
+app.config['SQALCHEMY_DATABASE_URI'] = 'sqlite:////Home/Desktop/personal-blog-project/blog.db'
+
+db = SQAlchemy(app)
 
 #Route for index
 @app.route('/')
