@@ -1,5 +1,5 @@
 #Importing flask and render_template
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 '''
 #Importing Flask-SQLAlchemy for database setup.
 from flask_sqlalchemy import SQLAlchemy'''
@@ -45,6 +45,16 @@ def contact():
 def add():
     return render_template('add.html')
 
+#Route for add
+@app.route('/addpost')
+def addpost():
+    title = request.form['title']
+    subtitle = request.form['subtitle']
+    author = request.form['author']
+    content = request.form['content']
+
+
+    return '<h1>Title: {} Subtitle: {} Content: {}</h1>'.format(title, subtitle, author, content)
 
 if __name__ == '__main__':
     app.run(debug=True)
