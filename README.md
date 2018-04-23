@@ -1,22 +1,22 @@
 # PERSONAL_BLOG
-#Personal-Blog App
+# Personal-Blog App
 
-#This is a web application named personal_blog that allows users to view & comment on blogs based on categories
+## This is a web application named personal_blog that allows users to view & comment on blogs based on categories
 
-#Author
+# Author
 Collins Kariuki
 
-#User Story
+# User Story
 A users can see blog posted
 A user can comment on different blogs and leave feedback
 A user can delete a comment
 A user can sign up and sign in and logout
 A user can view profile of different users
 
-#Prerequisites
+# Prerequisites
 -Python3.6
 
-#Setup/Installation Requirements
+# Setup/Installation Requirements
 -Internet connection
 
 -webpage URL:
@@ -36,12 +36,12 @@ A user can view profile of different users
 -Run personal blog
 #{follow the above instructions for set up}
 
-#Description
+# DIPTION
 A great way to solidify your knowledge is to teach it to other people. There is no better way to express your ideas and opinions than with a personal blog.
 
 This lead to creation of a personal blogging website where you can create and share your opinions and other users can read and comment on them.
 
-#Technologies Used
+# Technologies Used
 -HTML5
 -CSS
 -Bootstarap
