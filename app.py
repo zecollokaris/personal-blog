@@ -1,31 +1,30 @@
 #Importing flask and render_template
 from flask import Flask, render_template, request, redirect, url_for
 from datetime import datetime
-
-'''
 #Importing Flask-SQLAlchemy for database setup.
-from flask_sqlalchemy import SQLAlchemy'''
+
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-'''
-#Setting Database location
-app.config['SQALCHEMY_DATABASE_URI'] = 'sqlite:////Home/Desktop/personal-blog-project/blog.db'
-db = SQAlchemy(app)
 
-#Creating table that holds information
+#Setting Database location
+SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://karis:Kar!s123@localhost/blog'
+db = SQLAlchemy(app)
+
+#Creating table that holds information..models
 class Blogpost(db.Model):
+    __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50))
     subtitle = db.Column(db.String(50))
     author = db.Column(db.String(20))
     date_posted = db.Column(db.DateTime)
-    content = db.Column(db.Text)'''
 
 
-#Route for index
+#Route for index...views
 @app.route('/')
 def index():
-    #post = Blogpost.query.all()
+    posts = Blogpost.query.order_by(Blogpost.date_posted.desc()).all()
 
     return render_template('index.html', post=posts)
 
@@ -39,14 +38,7 @@ def about():
 def post(post_id):
     post = Blogpost.query.filter_by(id=post_id).one()
 
-    date_posted = post.date_posted.strftime('%B %d, %Y')
-
-    return render_template('post.html',post=post, date_posted=date_posted)
-
-#Route for contact
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
+    return render_template('post.html', post=post)
 
 #Route for add
 @app.route('/add')
