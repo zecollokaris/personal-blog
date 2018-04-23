@@ -1,36 +1,37 @@
 #Importing flask and render_template
 from flask import Flask, render_template, request, redirect, url_for
 from datetime import datetime
+from . import main
 
 #Importing Flask-SQLAlchemy for database setup.
 from flask_sqlalchemy import SQLAlchemy
 
 #Route for index...views
-@app.route('/')
+@main.route('/')
 def index():
     posts = Blogpost.query.order_by(Blogpost.date_posted.desc()).all()
 
     return render_template('index.html', post=posts)
 
 #Route for about
-@app.route('/about')
+@main.route('/about')
 def about():
     return render_template('about.html')
 
 #Route for post
-@app.route('/post/<int:post_id>')
+@main.route('/post/<int:post_id>')
 def post(post_id):
     post = Blogpost.query.filter_by(id=post_id).one()
 
     return render_template('post.html', post=post)
 
 #Route for add
-@app.route('/add')
+@main.route('/add')
 def add():
     return render_template('add.html')
 
 #Route for Adding Post
-@app.route('/addpost', methods=['POST'])
+@main.route('/addpost', methods=['POST'])
 def addpost():
     title = request.form['title']
     subtitle = request.form['subtitle']

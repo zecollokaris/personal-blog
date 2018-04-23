@@ -1,3 +1,8 @@
+#Importing flask and render_template
+from flask import Flask, render_template, request, redirect, url_for
+from datetime import datetime
+from . import db
+
 #Creating table that holds information
 class Blogpost(db.Model):
     __tablename__ = 'posts'
