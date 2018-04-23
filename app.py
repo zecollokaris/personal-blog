@@ -25,7 +25,7 @@ class Blogpost(db.Model):
 #Route for index
 @app.route('/')
 def index():
-    post = Blogpost.query.all()
+    #post = Blogpost.query.all()
 
     return render_template('index.html', post=posts)
 
