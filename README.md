@@ -41,7 +41,12 @@ A great way to solidify your knowledge is to teach it to other people. There is 
 
 This lead to creation of a personal blogging website where you can create and share your opinions and other users can read and comment on them.
 
-#
+#Technologies Used
+-HTML5
+-CSS
+-Bootstarap
+-Python3.6
+-flask
 
 #Contact
 -Mobile number: (254) 798731203
