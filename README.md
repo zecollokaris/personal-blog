@@ -8,9 +8,13 @@ Collins Kariuki
 
 # User Story
 A users can see blog posted
+
 A user can comment on different blogs and leave feedback
+
 A user can delete a comment
+
 A user can sign up and sign in and logout
+
 A user can view profile of different users
 
 # Prerequisites
@@ -36,21 +40,27 @@ A user can view profile of different users
 -Run personal blog
 #{follow the above instructions for set up}
 
-# DIPTION
+# DESCRIPTION
 A great way to solidify your knowledge is to teach it to other people. There is no better way to express your ideas and opinions than with a personal blog.
 
 This lead to creation of a personal blogging website where you can create and share your opinions and other users can read and comment on them.
 
 # Technologies Used
 -HTML5
+
 -CSS
+
 -Bootstarap
+
 -Python3.6
+
 -flask
 
 #Contact
 -Mobile number: (254) 798731203
+
 -Email Address: collo.kariss@gmail.com
+
 -github: zecollokaris
 
 
