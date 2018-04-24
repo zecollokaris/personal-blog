@@ -6,7 +6,9 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET KEY')
      
 class ProdConfig(Config):
-        SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+        # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+        app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+
 
 class DevConfig(Config):
     DEBUG = True
