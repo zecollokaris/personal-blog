@@ -5,6 +5,8 @@ from . import main
 from ..models import Blogpost 
 #Importing Flask-SQLAlchemy for database setup.
 from flask_sqlalchemy import SQLAlchemy
+from flask_login import login_required
+from .. import db
 
 #Route for index...views
 @main.route('/')
@@ -43,4 +45,5 @@ def addpost():
     db.session.add(post)
     db.session.commit()
 
-    return redirect(url_for('index'))
+
+    return redirect(url_for('main.index'))
