@@ -2,7 +2,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from datetime import datetime
 from . import main
-
+from ..models import Blogpost 
 #Importing Flask-SQLAlchemy for database setup.
 from flask_sqlalchemy import SQLAlchemy
 

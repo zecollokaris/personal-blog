@@ -4,7 +4,7 @@ from flask_migrate import MigrateCommand, Migrate
 from app.models import Blogpost
 
 
-app = create_app('production')
+app = create_app('development')
 
 
 manager = Manager(app)
@@ -14,4 +14,4 @@ migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)
 
 if __name__ == '__main__':
-    manage.run()
+    manager.run()

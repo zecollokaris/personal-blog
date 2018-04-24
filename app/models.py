@@ -11,3 +11,12 @@ class Blogpost(db.Model):
     subtitle = db.Column(db.String(50))
     author = db.Column(db.String(20))
     date_posted = db.Column(db.DateTime)
+
+#Creating table that holds information
+class Users(db.Model):
+    __tablename__ = 'users'
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(50))
+    username = db.Column(db.String(10))
+    password = db.Column(db.String(20))
+    date_posted = db.Column(db.DateTime)
