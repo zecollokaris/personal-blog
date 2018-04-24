@@ -13,7 +13,7 @@ from .. import db
 def index():
     posts = Blogpost.query.order_by(Blogpost.date_posted.desc()).all()
 
-    return render_template('index.html', post=posts)
+    return render_template('index.html', posts=posts)
 
 #Route for about
 @main.route('/about')

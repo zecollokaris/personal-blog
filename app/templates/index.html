@@ -49,7 +49,7 @@
             <a class="nav-link" href="{{ url_for('main.about') }}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('main.add') }}">Add</a>
+            <a class="nav-link" href="{{ url_for('main.add') }}">Add POST</a>
           </li>
         </ul>
       </div>
@@ -71,16 +71,22 @@
     </div>
   </header>
 
+
   <!-- Main Content -->
 
   <div class="container">
     <div class="row">
+      <div class="post-preview">
+         <h2 class="post-title">
+          &#8680
+         </h2>
+      </div>
       <div class="col-lg-8 col-md-10 mx-auto">
         {% for post in posts %}
         <div class="post-preview">
-          <a href="{{ url_for('post', post_id=post.id) }}">
-            <h2 class="post-title">
-              {{ post.title }}
+          <a href="{{ url_for('.post', post_id=post.id) }}">
+            <h2 class="post-title"style="color:#0D8499;">
+              {{ post.title }} 
             </h2>
             <h3 class="post-subtitle">
               {{ post.subtitle }}
@@ -94,6 +100,73 @@
     </div>
   </div>
 
+
+
+
+  <!--Default Content  -->
+  
+  <div class="container">
+    <div class="row">
+      </div>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+            <h2 class="post-title"style="color:#0D8499;" >
+               &#8680 AIRBNB HOST
+            </h2>
+            <h3 class="post-subtitle">
+               Wouldn’t it be great if you had something that could help you get closer to an early retirement? Something that could help
+              you make extra money to put away towards a life of financial independence? If you own a house or an apartment, you could
+              become an Airbnb host and list out the entire place when you are away or just a room when you're there. Airbnb properties
+              are now in 191 countries. And did you know that the fastest growing demographic of Airbnb hosts are women over 60? Not to
+              mention they are getting some of the highest 5-star reviews.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by Collins on April 17th 2016</p>
+        </div>
+
+            <div class="post-preview">
+              <h2 class="post-title"style="color:#0D8499;">
+               &#8680 TRAVEL APPS
+              </h2>
+              <h3 class="post-subtitle">
+                 Travel apps can really enhance the experience and ease of travel. These travel apps are the ones you use when you're on
+                your trip, not for the pre-planning. There are tons of travel apps to help you find the best airfare or the best hotel. These
+                apps represent the most useful when you walk out your door to the airport until you come home. These are the top ten I use
+                on just about every trip I take. Not all are free but when it comes to a good app, I have no problem paying for it. Most
+                apps are cheap so splurge a little when you find something you really like. Paying for an app may just remove those annoying
+                ads that pop up or give you that extra functionality that makes the app so much more useful. I bolded either free or the
+                price depending on what I use.
+
+              </h3>
+              </a>
+              <p class="post-meta">Posted by Collins on April 18th 2016</p>
+            </div>
+
+              <div class="post-preview">
+                <h2 class="post-title"style="color:#0D8499;">
+                 &#8680 UBER (FREE)
+                </h2>
+                <h3 class="post-subtitle">
+                   I think just about everyone has heard of Uber. But did you know that Uber operates Internationally? Uber is almost always
+                  cheaper than a taxi and can be so much easier to get. I also like that I don’t have to worry about having money in the currency
+                  of the country I just arrived in. No money exchanges hands. It’s all done via your credit card. I used Uber not only in the
+                  US but also Ecuador and Ireland. Have Uber installed on your phone and set up with a credit card before you travel. The only
+                  thing that bothers me is that some Uber drivers feel they need to call you. It’s happened to me only in big cities in the
+                  US. For me, it’s a problem because I don’t have a US phone. I really don’t know why they want to call. Most of the time it’s
+                  to tell you they are on their way and the car they are driving. But I already know that because the app tells me. It’s just
+                  one of those little things that bug me. But overall, Uber is my number one option for local travel when traveling.
+              
+                </h3>
+                </a>
+                <p class="post-meta">Posted by Collins on April 19th 2016</p>
+              </div>
+
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
   <hr>
 
   <!-- Footer -->
@@ -101,7 +174,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+          <p class="copyright text-muted">Copyright &copy; Collins 2018</p>
         </div>
       </div>
     </div>
