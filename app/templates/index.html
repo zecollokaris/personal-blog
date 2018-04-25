@@ -9,11 +9,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Travel Blog - Start Page!</title>
+  <title>Travel Blog - View Blogs!</title>
 
   <!-- Bootstrap core CSS -->
 
   <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+ 
 
   <!-- Custom fonts for this template -->
 
@@ -25,6 +26,7 @@
   <!-- Custom styles for this template -->
 
   <link href="{{ url_for('static', filename='personal-blog.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='templates.css') }}" rel="stylesheet">
 
 </head>
 
@@ -33,7 +35,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="{{ url_for('.index') }}">Blog</a>
+      <a class="navbar-brand" href="{{ url_for('.index') }}">View Blogs</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -77,30 +79,31 @@
   <div class="container">
     <div class="row">
       <div class="post-preview">
-         <h2 class="post-title">
-          &#8680
-         </h2>
       </div>
       <div class="col-lg-8 col-md-10 mx-auto">
-        {% for post in posts %}
+         {% for post in posts %}
         <div class="post-preview">
           <a href="{{ url_for('.post', post_id=post.id) }}">
             <h2 class="post-title"style="color:#0D8499;">
-              {{ post.title }} 
+               &#8680  {{ post.title }} 
             </h2>
             <h3 class="post-subtitle">
               {{ post.subtitle }}
             </h3>
           </a>
           <p class="post-meta">Posted by {{ post.author }} on {{ post.date_posted.strftime('%B %d, %Y') }}</p>
+
+          <textarea name="comment[body]" id="new_comment_field" placeholder="Leave a comment" aria-label="Comment body" class="form-control input-contrast comment-form-textarea js-comment-field js-task-list-field js-quick-submit js-size-to-fit js-suggester-field js-quote-selection-target js-session-resumable js-saved-reply-shortcut-comment-field"></textarea>
+          <button type="submit" class="btn btn-primary" data-disable-with="" data-disable-invalid="">
+            Comment
+          </button>
+
         </div>
         {% endfor %}
         <hr>
       </div>
     </div>
   </div>
-
-
 
 
   <!--Default Content  -->
@@ -121,7 +124,13 @@
               mention they are getting some of the highest 5-star reviews.
             </h3>
           </a>
-          <p class="post-meta">Posted by Collins on April 17th 2016</p>
+          <p class="post-meta">Posted by Collins on April 19th 2016</p>
+
+          <textarea name="comment[body]" id="new_comment_field" placeholder="Leave a comment" aria-label="Comment body" class="form-control input-contrast comment-form-textarea js-comment-field js-task-list-field js-quick-submit js-size-to-fit js-suggester-field js-quote-selection-target js-session-resumable js-saved-reply-shortcut-comment-field"></textarea>
+          <button type="submit" class="btn btn-primary" data-disable-with="" data-disable-invalid="">
+            Comment
+          </button>
+
         </div>
 
             <div class="post-preview">
@@ -140,6 +149,12 @@
               </h3>
               </a>
               <p class="post-meta">Posted by Collins on April 18th 2016</p>
+
+              <textarea name="comment[body]" id="new_comment_field" placeholder="Leave a comment" aria-label="Comment body" class="form-control input-contrast comment-form-textarea js-comment-field js-task-list-field js-quick-submit js-size-to-fit js-suggester-field js-quote-selection-target js-session-resumable js-saved-reply-shortcut-comment-field"></textarea>
+              <button type="submit" class="btn btn-primary" data-disable-with="" data-disable-invalid="">
+                Comment
+              </button>
+
             </div>
 
               <div class="post-preview">
@@ -158,7 +173,13 @@
               
                 </h3>
                 </a>
-                <p class="post-meta">Posted by Collins on April 19th 2016</p>
+                <p class="post-meta">Posted by Collins on April 17th 2016</p>
+
+                <textarea name="comment[body]" id="new_comment_field" placeholder="Leave a comment" aria-label="Comment body" class="form-control input-contrast comment-form-textarea js-comment-field js-task-list-field js-quick-submit js-size-to-fit js-suggester-field js-quote-selection-target js-session-resumable js-saved-reply-shortcut-comment-field"></textarea>
+                <button type="submit" class="btn btn-primary" data-disable-with="" data-disable-invalid="">
+                  Comment
+                </button>
+
               </div>
 
         <hr>
@@ -180,7 +201,7 @@
     </div>
   </footer>
 
-</body>
+ </body>
 
 </html>
 

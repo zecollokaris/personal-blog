@@ -1,0 +1,17 @@
+/*Html background*/
+
+html {
+  height: 100%;
+  background-image: url("../img/about-images/backdoor.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Text body*/
+
+body {
+  width: 80%;
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 0%
+}
