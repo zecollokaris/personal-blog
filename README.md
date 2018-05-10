@@ -51,7 +51,11 @@ A user can view profile of different users
 
 -cd personal-blog-project
 
--source virtual/bin/activate
+-python3.6 -m venv virtual (Install virtual environment)
+
+-source virtual/bin/activate (Install virtual environment)
+
+-install requirements in (requirements.txt) files
 
 -Run personal blog
 ## {follow the above instructions for set up}
