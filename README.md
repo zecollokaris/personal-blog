@@ -1,22 +1,42 @@
 # PERSONAL_BLOG
-#Personal-Blog App
+# App Display
 
-#This is a web application named personal_blog that allows users to view & comment on blogs based on categories
 
-#Author
+
+
+## BLOG-: LANDING PAGE
+![screenshot from 2018-05-11 00-05-51](https://user-images.githubusercontent.com/36197725/39894616-2226bc52-54b0-11e8-89bf-1c5ee0f74cdb.png)
+
+
+
+
+
+
+## BLOG-: ADD POST PAGE
+![screenshot from 2018-05-11 00-05-16](https://user-images.githubusercontent.com/36197725/39894612-1cd8e324-54b0-11e8-86d9-0e3f559fbe12.png)
+
+
+
+
+
+# Personal-Blog App
+
+## This is a web application named personal_blog that allows users to view & comment on blogs based on categories
+
+# Author
 Collins Kariuki
 
-#User Story
+# User Story
 A users can see blog posted
 A user can comment on different blogs and leave feedback
 A user can delete a comment
 A user can sign up and sign in and logout
 A user can view profile of different users
 
-#Prerequisites
+## Prerequisites
 -Python3.6
 
-#Setup/Installation Requirements
+# Setup/Installation Requirements
 -Internet connection
 
 -webpage URL:
@@ -34,45 +54,21 @@ A user can view profile of different users
 -source virtual/bin/activate
 
 -Run personal blog
-#{follow the above instructions for set up}
+## {follow the above instructions for set up}
 
-#Description
+# Description
 A great way to solidify your knowledge is to teach it to other people. There is no better way to express your ideas and opinions than with a personal blog.
 
 This lead to creation of a personal blogging website where you can create and share your opinions and other users can read and comment on them.
 
-#Technologies Used
+## Technologies Used
 -HTML5
 -CSS
 -Bootstarap
 -Python3.6
 -flask
 
-#Contact
+## Contact
 -Mobile number: (254) 798731203
 -Email Address: collo.kariss@gmail.com
 -github: zecollokaris
-
-
-
-                                      MIT License
-
-                        Copyright (c) [2018] [COLLINS KARIUKI]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
